@@ -25,7 +25,7 @@ module ascii_test(
     wire [7:0] rom_data_th;          // 8-bit row data from text ROM
     wire ascii_bit_en,ascii_bit_th, plot;         // ASCII ROM bit and plot signal
     
-    integer i;                  // Loop counter
+    integer i = 0;                  // Loop counter
 
     // Initialize memory
     initial begin
@@ -36,6 +36,15 @@ module ascii_test(
     end
 
 
+    // SCREEN UI PAINTER MODULE INSTANCE
+    wire [11:0] painter_rgb; // Output RGB from screen_painter
+    screen_painter ui_painter (
+        .x(x),
+        .y(y),
+        .video_on(video_on),
+        .rgb(painter_rgb)
+    );
+    
     // ASCII ROM instance
     ascii_rom rom_en(.clk(clk), .addr(rom_addr), .data(rom_data_en));
     
@@ -51,7 +60,8 @@ module ascii_test(
 
     // Memory access: Adjusted for 32 columns per row
 //    assign ascii_char = mem[(x[7:3]) + 32 * (y[6:4])]; // 32 columns, 8 rows (grid of 32x8)
-    assign ascii_char = mem[((x[7:3] + 8) % 32) + (32 * ((y[6:4] + 5)%8))]; // 32 columns, 8 rows (grid of 32x8)
+//    assign ascii_char = mem[((x[7:3] + 8) % 32) + (32 * ((y[6:4] + 5)%8))]; // 32 columns, 8 rows (grid of 32x8)
+    assign ascii_char = mem[((x[7:3] + 8) % 32) + (32 * y[6:4])]; // 32 columns, 8 rows (grid of 32x8)
 
 //    assign ascii_char = mem[((x[7:3] + 8) & 5'b11111) + 32 * ((y[6:4] + 5) & 3'b111)];
     
@@ -66,48 +76,24 @@ module ascii_test(
 // Memory write logic
 always @(posedge we or posedge reset) begin
     if (reset) begin
-        itr <= 8'b0; // Reset cursor
+        itr = 8'b0;
+        for (i = 0; i < MEMSIZE; i = i + 1) begin
+            mem[i] = 7'h00;         // Initialize all memory locations to 7'h00
+        end
     end else if (we) begin
         if (data[6:0] == 13) begin // Enter key
-            // Check if the next row would exceed the memory size
-            if ((((itr / 32) + 1) * 32) >= MEMSIZE) begin
-                // Wrap around to the start
-                itr <= 8'b0; 
-                // Clear the first line
-                for (i = 0; i < 32; i = i + 1) begin
-                    mem[i] <= 7'h00;
-                end
-            end else begin
-                // Clear all characters in the new line
-                for (i = 0; i < 32; i = i + 1) begin
-                    mem[(((itr / 32) + 1) * 32) + i] <= 7'h00;
-                end
-                // Move to the start of the next row
-                itr <= (((itr / 32) + 1) * 32); // Increment row and set to first column
-            end
+            // Move to the start of the next row
+            itr <= (((itr / 32) + 1) * 32); // Increment row and set to first column
+            if (itr >= (MEMSIZE - 32)) // Prevent overflow
+                itr <= 8'b0; // Wrap around to the start
         end else begin
             // Write data to memory and increment cursor
             mem[itr] <= data[6:0];
             itr <= itr + 1; // Move to the next position
 
             // Wrap to the start of the next row if end of row is reached
-            if ((itr % 32) == 31) begin // End of row (32 characters per row)
-                // Check if the next row would exceed the memory size
-                if ((((itr / 32) + 1) * 32) >= MEMSIZE) begin
-                    // Wrap around to the start
-                    itr <= 8'b0; 
-                    // Clear the first line
-                    for (i = 0; i < 32; i = i + 1) begin
-                        mem[i] <= 7'h00;
-                    end
-                end else begin
-                    // Clear all characters in the new line
-                    for (i = 0; i < 32; i = i + 1) begin
-                        mem[(((itr / 32) + 1) * 32) + i] <= 7'h00;
-                    end
-                    itr <= (((itr / 32) + 1) * 32); // Move to the first column of the next row
-                end
-            end
+            if ((itr % 32) == 31) // End of row (32 characters per row)
+                itr <= (((itr / 32) + 1) * 32); // Move to the first column of the next row
 
             // Prevent overflow
             if (itr >= MEMSIZE)
@@ -116,14 +102,14 @@ always @(posedge we or posedge reset) begin
     end
 end
 
-
-
     // RGB multiplexing logic
     always @* begin
         if (~video_on)
             rgb = 12'h000; // Display blank screen
         else if (plot)
             rgb = 12'h000; // Blue letters
+        else if (painter_rgb != 12'h000)
+            rgb = painter_rgb; // Use UI painter's output for non-zero pixels
         else
             rgb = 12'hFFF; // White background
     end

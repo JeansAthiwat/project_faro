@@ -81,6 +81,7 @@ read_verilog -library xil_defaultlib {
   C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/new/ascii_rom_th.v
   C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v
   C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/baudrate_gen.v
+  C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/new/screen_painter.v
   C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/uart.v
   C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/uart_rx.v
   C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/uart_tx.v
