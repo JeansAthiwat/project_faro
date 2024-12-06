@@ -7,6 +7,7 @@ module ascii_test(
     input [7:0] data,          // 8-bit data from UART
     input video_on,            // Video on/off signal
     input [9:0] x, y,          // Current pixel coordinates
+    input lang,                // Language state: 0 (English), 1 (Thai)
     output reg [11:0] rgb      // RGB output
 );
 
@@ -20,56 +21,102 @@ module ascii_test(
     wire [6:0] ascii_char;        // 7-bit ASCII character code
     wire [3:0] char_row;          // 4-bit row of ASCII character
     wire [2:0] bit_addr;          // Column number of ROM data
-    wire [7:0] rom_data;          // 8-bit row data from text ROM
-    wire ascii_bit, plot;         // ASCII ROM bit and plot signal
-
-    integer i;
+    wire [7:0] rom_data_en;          // 8-bit row data from text ROM
+    wire [7:0] rom_data_th;          // 8-bit row data from text ROM
+    wire ascii_bit_en,ascii_bit_th, plot;         // ASCII ROM bit and plot signal
+    
+    integer i;                  // Loop counter
 
     // Initialize memory
     initial begin
         itr = 8'b0;
-        mem[0] = 7'h41; // Default character 'A'
+        for (i = 0; i < MEMSIZE; i = i + 1) begin
+            mem[i] = 7'h00;         // Initialize all memory locations to 7'h00
+        end
     end
 
-    // ASCII ROM instance
-    ascii_rom rom(.clk(clk), .addr(rom_addr), .data(rom_data));
 
+    // ASCII ROM instance
+    ascii_rom rom_en(.clk(clk), .addr(rom_addr), .data(rom_data_en));
+    
+    // ASCII ROM TH instance
+    ascii_rom_th rom_th(.clk(clk), .addr(rom_addr), .data(rom_data_th));
+        
     // ASCII ROM address and data interface
     assign rom_addr = {ascii_char, char_row};   // ROM address
-    assign ascii_bit = rom_data[~bit_addr];     // Reverse bit order for ASCII character
+    assign ascii_bit_en = rom_data_en[~bit_addr];     // Reverse bit order for ASCII character
+    assign ascii_bit_th = rom_data_th[~bit_addr];     // Reverse bit order for ASCII character
     assign char_row = y[3:0];                   // Row number of ASCII character
     assign bit_addr = x[2:0];                   // Column number of ASCII character
 
     // Memory access: Adjusted for 32 columns per row
 //    assign ascii_char = mem[(x[7:3]) + 32 * (y[6:4])]; // 32 columns, 8 rows (grid of 32x8)
-    assign ascii_char = mem[((x[7:3] + 8) & 5'b11111) + 32 * ((y[6:4] + 5) & 3'b111)];
+    assign ascii_char = mem[((x[7:3] + 8) % 32) + (32 * ((y[6:4] + 5)%8))]; // 32 columns, 8 rows (grid of 32x8)
+
+//    assign ascii_char = mem[((x[7:3] + 8) & 5'b11111) + 32 * ((y[6:4] + 5) & 3'b111)];
     
     // Plot signal update for larger display area
-    assign plot = ((x >= 192 && x < 448) && (y >= 176 && y < 304)) ? ascii_bit : 1'b0;
+    
+    // (assign plot if char bit is not 0)
+    assign plot = ((x >= 192 && x < 448) && (y >= 176 && y < 304)) 
+                  ? (lang == 1'b0 ? ascii_bit_en : ascii_bit_th) 
+                  : 1'b0;
 
-    // Memory write logic
-    always @(posedge we or posedge reset) begin
-        if (reset) begin
-            itr <= 8'b0; // Reset cursor
-        end else if (we) begin
-            if (data[6:0] == 13) begin // Enter key
-                // Move to the start of the next row
-                itr <= ((itr >> 5) + 1) << 5; // Increment row and set to first column
-                if (itr >= (MEMSIZE - 32)) // Prevent overflow
-                    itr <= 8'b0; // Wrap around to the start
+
+// Memory write logic
+always @(posedge we or posedge reset) begin
+    if (reset) begin
+        itr <= 8'b0; // Reset cursor
+    end else if (we) begin
+        if (data[6:0] == 13) begin // Enter key
+            // Check if the next row would exceed the memory size
+            if ((((itr / 32) + 1) * 32) >= MEMSIZE) begin
+                // Wrap around to the start
+                itr <= 8'b0; 
+                // Clear the first line
+                for (i = 0; i < 32; i = i + 1) begin
+                    mem[i] <= 7'h00;
+                end
             end else begin
-                // Write data to memory and increment cursor
-                mem[itr] <= data[6:0];
-                itr <= itr + 1; // Move to the next position
-                // Wrap to the start of the next row if end of row is reached
-                if ((itr & 5'b11111) == 5'b11111) // End of row (32 characters per row)
-                    itr <= ((itr >> 5) + 1) << 5; // Move to the first column of the next row
-                // Prevent overflow
-                if (itr >= MEMSIZE)
-                    itr <= 8'b0; // Wrap around to the start
+                // Clear all characters in the new line
+                for (i = 0; i < 32; i = i + 1) begin
+                    mem[(((itr / 32) + 1) * 32) + i] <= 7'h00;
+                end
+                // Move to the start of the next row
+                itr <= (((itr / 32) + 1) * 32); // Increment row and set to first column
             end
+        end else begin
+            // Write data to memory and increment cursor
+            mem[itr] <= data[6:0];
+            itr <= itr + 1; // Move to the next position
+
+            // Wrap to the start of the next row if end of row is reached
+            if ((itr % 32) == 31) begin // End of row (32 characters per row)
+                // Check if the next row would exceed the memory size
+                if ((((itr / 32) + 1) * 32) >= MEMSIZE) begin
+                    // Wrap around to the start
+                    itr <= 8'b0; 
+                    // Clear the first line
+                    for (i = 0; i < 32; i = i + 1) begin
+                        mem[i] <= 7'h00;
+                    end
+                end else begin
+                    // Clear all characters in the new line
+                    for (i = 0; i < 32; i = i + 1) begin
+                        mem[(((itr / 32) + 1) * 32) + i] <= 7'h00;
+                    end
+                    itr <= (((itr / 32) + 1) * 32); // Move to the first column of the next row
+                end
+            end
+
+            // Prevent overflow
+            if (itr >= MEMSIZE)
+                itr <= 8'b0; // Wrap around to the start
         end
     end
+end
+
+
 
     // RGB multiplexing logic
     always @* begin

@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Dec  6 03:10:45 2024
-# Process ID: 2848
+# Start of session at: Fri Dec  6 15:41:41 2024
+# Process ID: 19180
 # Current directory: C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
 # Log file: C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.runs/synth_1/top.vds
@@ -19,10 +19,10 @@
 # Host memory       :16487 MB
 # Swap memory       :1677 MB
 # Total Virtual     :18165 MB
-# Available Virtual :3884 MB
+# Available Virtual :6883 MB
 #-----------------------------------------------------------
 source top.tcl -notrace
-create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 487.004 ; gain = 201.480
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 485.734 ; gain = 201.133
 Command: read_checkpoint -auto_incremental -incremental C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/utils_1/imports/synth_1/top.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/utils_1/imports/synth_1/top.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -36,221 +36,223 @@ INFO: [Designutils 20-5440] No compile time benefit to using incremental synthes
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 20292
+INFO: [Synth 8-7075] Helper process launched with PID 2312
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1341.699 ; gain = 448.461
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1341.457 ; gain = 448.957
 ---------------------------------------------------------------------------------
-WARNING: [Synth 8-10929] literal value 'he010 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1138]
-WARNING: [Synth 8-10929] literal value 'he011 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1139]
-WARNING: [Synth 8-10929] literal value 'he012 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1140]
-WARNING: [Synth 8-10929] literal value 'he013 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1141]
-WARNING: [Synth 8-10929] literal value 'he014 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1142]
-WARNING: [Synth 8-10929] literal value 'he015 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1143]
-WARNING: [Synth 8-10929] literal value 'he016 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1144]
-WARNING: [Synth 8-10929] literal value 'he017 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1145]
-WARNING: [Synth 8-10929] literal value 'he018 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1146]
-WARNING: [Synth 8-10929] literal value 'he019 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1147]
-WARNING: [Synth 8-10929] literal value 'he01a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1148]
-WARNING: [Synth 8-10929] literal value 'he01b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1149]
-WARNING: [Synth 8-10929] literal value 'he01c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1150]
-WARNING: [Synth 8-10929] literal value 'he01d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1151]
-WARNING: [Synth 8-10929] literal value 'he01e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1152]
-WARNING: [Synth 8-10929] literal value 'he01f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1153]
-WARNING: [Synth 8-10929] literal value 'he020 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1156]
-WARNING: [Synth 8-10929] literal value 'he021 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1157]
-WARNING: [Synth 8-10929] literal value 'he022 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1158]
-WARNING: [Synth 8-10929] literal value 'he023 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1159]
-WARNING: [Synth 8-10929] literal value 'he024 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1160]
-WARNING: [Synth 8-10929] literal value 'he025 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1161]
-WARNING: [Synth 8-10929] literal value 'he026 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1162]
-WARNING: [Synth 8-10929] literal value 'he027 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1163]
-WARNING: [Synth 8-10929] literal value 'he028 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1164]
-WARNING: [Synth 8-10929] literal value 'he029 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1165]
-WARNING: [Synth 8-10929] literal value 'he02a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1166]
-WARNING: [Synth 8-10929] literal value 'he02b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1167]
-WARNING: [Synth 8-10929] literal value 'he02c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1168]
-WARNING: [Synth 8-10929] literal value 'he02d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1169]
-WARNING: [Synth 8-10929] literal value 'he02e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1170]
-WARNING: [Synth 8-10929] literal value 'he02f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1171]
-WARNING: [Synth 8-10929] literal value 'he030 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1174]
-WARNING: [Synth 8-10929] literal value 'he031 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1175]
-WARNING: [Synth 8-10929] literal value 'he032 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1176]
-WARNING: [Synth 8-10929] literal value 'he033 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1177]
-WARNING: [Synth 8-10929] literal value 'he034 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1178]
-WARNING: [Synth 8-10929] literal value 'he035 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1179]
-WARNING: [Synth 8-10929] literal value 'he036 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1180]
-WARNING: [Synth 8-10929] literal value 'he037 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1181]
-WARNING: [Synth 8-10929] literal value 'he038 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1182]
-WARNING: [Synth 8-10929] literal value 'he039 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1183]
-WARNING: [Synth 8-10929] literal value 'he03a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1184]
-WARNING: [Synth 8-10929] literal value 'he03b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1185]
-WARNING: [Synth 8-10929] literal value 'he03c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1186]
-WARNING: [Synth 8-10929] literal value 'he03d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1187]
-WARNING: [Synth 8-10929] literal value 'he03e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1188]
-WARNING: [Synth 8-10929] literal value 'he03f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1189]
-WARNING: [Synth 8-10929] literal value 'he040 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1192]
-WARNING: [Synth 8-10929] literal value 'he041 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1193]
-WARNING: [Synth 8-10929] literal value 'he042 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1194]
-WARNING: [Synth 8-10929] literal value 'he043 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1195]
-WARNING: [Synth 8-10929] literal value 'he044 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1196]
-WARNING: [Synth 8-10929] literal value 'he045 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1197]
-WARNING: [Synth 8-10929] literal value 'he046 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1198]
-WARNING: [Synth 8-10929] literal value 'he047 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1199]
-WARNING: [Synth 8-10929] literal value 'he048 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1200]
-WARNING: [Synth 8-10929] literal value 'he049 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1201]
-WARNING: [Synth 8-10929] literal value 'he04a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1202]
-WARNING: [Synth 8-10929] literal value 'he04b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1203]
-WARNING: [Synth 8-10929] literal value 'he04c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1204]
-WARNING: [Synth 8-10929] literal value 'he04d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1205]
-WARNING: [Synth 8-10929] literal value 'he04e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1206]
-WARNING: [Synth 8-10929] literal value 'he04f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1207]
-WARNING: [Synth 8-10929] literal value 'he050 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1210]
-WARNING: [Synth 8-10929] literal value 'he051 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1211]
-WARNING: [Synth 8-10929] literal value 'he052 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1212]
-WARNING: [Synth 8-10929] literal value 'he053 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1213]
-WARNING: [Synth 8-10929] literal value 'he054 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1214]
-WARNING: [Synth 8-10929] literal value 'he055 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1215]
-WARNING: [Synth 8-10929] literal value 'he056 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1216]
-WARNING: [Synth 8-10929] literal value 'he057 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1217]
-WARNING: [Synth 8-10929] literal value 'he058 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1218]
-WARNING: [Synth 8-10929] literal value 'he059 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1219]
-WARNING: [Synth 8-10929] literal value 'he05a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1220]
-WARNING: [Synth 8-10929] literal value 'he05b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1221]
-WARNING: [Synth 8-10929] literal value 'he05c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1222]
-WARNING: [Synth 8-10929] literal value 'he05d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1223]
-WARNING: [Synth 8-10929] literal value 'he05e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1224]
-WARNING: [Synth 8-10929] literal value 'he05f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1225]
-WARNING: [Synth 8-10929] literal value 'he060 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1228]
-WARNING: [Synth 8-10929] literal value 'he061 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1229]
-WARNING: [Synth 8-10929] literal value 'he062 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1230]
-WARNING: [Synth 8-10929] literal value 'he063 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1231]
-WARNING: [Synth 8-10929] literal value 'he064 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1232]
-WARNING: [Synth 8-10929] literal value 'he065 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1233]
-WARNING: [Synth 8-10929] literal value 'he066 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1234]
-WARNING: [Synth 8-10929] literal value 'he067 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1235]
-WARNING: [Synth 8-10929] literal value 'he068 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1236]
-WARNING: [Synth 8-10929] literal value 'he069 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1237]
-WARNING: [Synth 8-10929] literal value 'he06a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1238]
-WARNING: [Synth 8-10929] literal value 'he06b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1239]
-WARNING: [Synth 8-10929] literal value 'he06c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1240]
-WARNING: [Synth 8-10929] literal value 'he06d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1241]
-WARNING: [Synth 8-10929] literal value 'he06e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1242]
-WARNING: [Synth 8-10929] literal value 'he06f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1243]
-WARNING: [Synth 8-10929] literal value 'he070 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1246]
-WARNING: [Synth 8-10929] literal value 'he071 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1247]
-WARNING: [Synth 8-10929] literal value 'he072 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1248]
-WARNING: [Synth 8-10929] literal value 'he073 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1249]
+WARNING: [Synth 8-10929] literal value 'he010 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1135]
+WARNING: [Synth 8-10929] literal value 'he011 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1136]
+WARNING: [Synth 8-10929] literal value 'he012 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1137]
+WARNING: [Synth 8-10929] literal value 'he013 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1138]
+WARNING: [Synth 8-10929] literal value 'he014 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1139]
+WARNING: [Synth 8-10929] literal value 'he015 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1140]
+WARNING: [Synth 8-10929] literal value 'he016 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1141]
+WARNING: [Synth 8-10929] literal value 'he017 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1142]
+WARNING: [Synth 8-10929] literal value 'he018 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1143]
+WARNING: [Synth 8-10929] literal value 'he019 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1144]
+WARNING: [Synth 8-10929] literal value 'he01a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1145]
+WARNING: [Synth 8-10929] literal value 'he01b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1146]
+WARNING: [Synth 8-10929] literal value 'he01c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1147]
+WARNING: [Synth 8-10929] literal value 'he01d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1148]
+WARNING: [Synth 8-10929] literal value 'he01e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1149]
+WARNING: [Synth 8-10929] literal value 'he01f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1150]
+WARNING: [Synth 8-10929] literal value 'he020 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1153]
+WARNING: [Synth 8-10929] literal value 'he021 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1154]
+WARNING: [Synth 8-10929] literal value 'he022 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1155]
+WARNING: [Synth 8-10929] literal value 'he023 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1156]
+WARNING: [Synth 8-10929] literal value 'he024 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1157]
+WARNING: [Synth 8-10929] literal value 'he025 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1158]
+WARNING: [Synth 8-10929] literal value 'he026 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1159]
+WARNING: [Synth 8-10929] literal value 'he027 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1160]
+WARNING: [Synth 8-10929] literal value 'he028 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1161]
+WARNING: [Synth 8-10929] literal value 'he029 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1162]
+WARNING: [Synth 8-10929] literal value 'he02a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1163]
+WARNING: [Synth 8-10929] literal value 'he02b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1164]
+WARNING: [Synth 8-10929] literal value 'he02c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1165]
+WARNING: [Synth 8-10929] literal value 'he02d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1166]
+WARNING: [Synth 8-10929] literal value 'he02e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1167]
+WARNING: [Synth 8-10929] literal value 'he02f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1168]
+WARNING: [Synth 8-10929] literal value 'he030 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1171]
+WARNING: [Synth 8-10929] literal value 'he031 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1172]
+WARNING: [Synth 8-10929] literal value 'he032 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1173]
+WARNING: [Synth 8-10929] literal value 'he033 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1174]
+WARNING: [Synth 8-10929] literal value 'he034 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1175]
+WARNING: [Synth 8-10929] literal value 'he035 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1176]
+WARNING: [Synth 8-10929] literal value 'he036 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1177]
+WARNING: [Synth 8-10929] literal value 'he037 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1178]
+WARNING: [Synth 8-10929] literal value 'he038 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1179]
+WARNING: [Synth 8-10929] literal value 'he039 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1180]
+WARNING: [Synth 8-10929] literal value 'he03a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1181]
+WARNING: [Synth 8-10929] literal value 'he03b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1182]
+WARNING: [Synth 8-10929] literal value 'he03c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1183]
+WARNING: [Synth 8-10929] literal value 'he03d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1184]
+WARNING: [Synth 8-10929] literal value 'he03e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1185]
+WARNING: [Synth 8-10929] literal value 'he03f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1186]
+WARNING: [Synth 8-10929] literal value 'he040 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1189]
+WARNING: [Synth 8-10929] literal value 'he041 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1190]
+WARNING: [Synth 8-10929] literal value 'he042 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1191]
+WARNING: [Synth 8-10929] literal value 'he043 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1192]
+WARNING: [Synth 8-10929] literal value 'he044 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1193]
+WARNING: [Synth 8-10929] literal value 'he045 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1194]
+WARNING: [Synth 8-10929] literal value 'he046 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1195]
+WARNING: [Synth 8-10929] literal value 'he047 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1196]
+WARNING: [Synth 8-10929] literal value 'he048 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1197]
+WARNING: [Synth 8-10929] literal value 'he049 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1198]
+WARNING: [Synth 8-10929] literal value 'he04a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1199]
+WARNING: [Synth 8-10929] literal value 'he04b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1200]
+WARNING: [Synth 8-10929] literal value 'he04c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1201]
+WARNING: [Synth 8-10929] literal value 'he04d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1202]
+WARNING: [Synth 8-10929] literal value 'he04e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1203]
+WARNING: [Synth 8-10929] literal value 'he04f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1204]
+WARNING: [Synth 8-10929] literal value 'he050 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1207]
+WARNING: [Synth 8-10929] literal value 'he051 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1208]
+WARNING: [Synth 8-10929] literal value 'he052 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1209]
+WARNING: [Synth 8-10929] literal value 'he053 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1210]
+WARNING: [Synth 8-10929] literal value 'he054 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1211]
+WARNING: [Synth 8-10929] literal value 'he055 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1212]
+WARNING: [Synth 8-10929] literal value 'he056 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1213]
+WARNING: [Synth 8-10929] literal value 'he057 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1214]
+WARNING: [Synth 8-10929] literal value 'he058 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1215]
+WARNING: [Synth 8-10929] literal value 'he059 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1216]
+WARNING: [Synth 8-10929] literal value 'he05a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1217]
+WARNING: [Synth 8-10929] literal value 'he05b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1218]
+WARNING: [Synth 8-10929] literal value 'he05c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1219]
+WARNING: [Synth 8-10929] literal value 'he05d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1220]
+WARNING: [Synth 8-10929] literal value 'he05e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1221]
+WARNING: [Synth 8-10929] literal value 'he05f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1222]
+WARNING: [Synth 8-10929] literal value 'he060 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1225]
+WARNING: [Synth 8-10929] literal value 'he061 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1226]
+WARNING: [Synth 8-10929] literal value 'he062 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1227]
+WARNING: [Synth 8-10929] literal value 'he063 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1228]
+WARNING: [Synth 8-10929] literal value 'he064 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1229]
+WARNING: [Synth 8-10929] literal value 'he065 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1230]
+WARNING: [Synth 8-10929] literal value 'he066 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1231]
+WARNING: [Synth 8-10929] literal value 'he067 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1232]
+WARNING: [Synth 8-10929] literal value 'he068 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1233]
+WARNING: [Synth 8-10929] literal value 'he069 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1234]
+WARNING: [Synth 8-10929] literal value 'he06a truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1235]
+WARNING: [Synth 8-10929] literal value 'he06b truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1236]
+WARNING: [Synth 8-10929] literal value 'he06c truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1237]
+WARNING: [Synth 8-10929] literal value 'he06d truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1238]
+WARNING: [Synth 8-10929] literal value 'he06e truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1239]
+WARNING: [Synth 8-10929] literal value 'he06f truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1240]
+WARNING: [Synth 8-10929] literal value 'he070 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1243]
+WARNING: [Synth 8-10929] literal value 'he071 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1244]
+WARNING: [Synth 8-10929] literal value 'he072 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1245]
+WARNING: [Synth 8-10929] literal value 'he073 truncated to fit in 11 bits [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:1246]
 INFO: [Common 17-14] Message 'Synth 8-10929' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
 INFO: [Synth 8-6157] synthesizing module 'top' [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/top.v:3]
 INFO: [Synth 8-6157] synthesizing module 'vga_controller' [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/vga_controller.v:21]
 INFO: [Synth 8-6155] done synthesizing module 'vga_controller' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/vga_controller.v:21]
 INFO: [Synth 8-6157] synthesizing module 'ascii_test' [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:3]
-INFO: [Synth 8-6157] synthesizing module 'ascii_rom' [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:5]
-WARNING: [Synth 8-151] case item 11'b01100000000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100000001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100000010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100000011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100000100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100000101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100000110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100000111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100001000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100001001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100001010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100001011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100001100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100001101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100001110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100001111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100010000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100010001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100010010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100010011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100010100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100010101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100010110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100010111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100011000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100011001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100011010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100011011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100011100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100011101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100011110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100011111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100100000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100100001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100100010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100100011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100100100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100100101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100100110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100100111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100101000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100101001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100101010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100101011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100101100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100101101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100101110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100101111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100110000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100110001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100110010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100110011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100110100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100110101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100110110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100110111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100111000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100111001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100111010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100111011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100111100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100111101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100111110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01100111111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101000000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101000001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101000010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101000011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101000100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101000101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101000110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101000111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101001000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101001001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101001010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101001011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101001100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101001101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101001110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101001111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101010000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101010001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101010010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101010011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101010100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101010101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101010110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101010111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101011000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101011001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101011010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101011011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101011100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101011101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101011110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101011111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101100000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101100001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101100010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
-WARNING: [Synth 8-151] case item 11'b01101100011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:19]
+INFO: [Synth 8-6157] synthesizing module 'ascii_rom' [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:2]
+WARNING: [Synth 8-151] case item 11'b01100000000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100000001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100000010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100000011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100000100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100000101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100000110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100000111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100001000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100001001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100001010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100001011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100001100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100001101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100001110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100001111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100010000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100010001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100010010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100010011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100010100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100010101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100010110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100010111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100011000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100011001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100011010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100011011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100011100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100011101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100011110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100011111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100100000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100100001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100100010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100100011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100100100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100100101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100100110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100100111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100101000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100101001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100101010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100101011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100101100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100101101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100101110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100101111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100110000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100110001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100110010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100110011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100110100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100110101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100110110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100110111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100111000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100111001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100111010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100111011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100111100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100111101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100111110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01100111111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101000000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101000001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101000010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101000011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101000100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101000101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101000110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101000111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101001000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101001001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101001010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101001011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101001100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101001101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101001110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101001111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101010000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101010001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101010010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101010011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101010100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101010101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101010110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101010111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101011000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101011001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101011010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101011011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101011100 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101011101 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101011110 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101011111 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101100000 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101100001 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101100010 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
+WARNING: [Synth 8-151] case item 11'b01101100011 is unreachable [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:16]
 INFO: [Common 17-14] Message 'Synth 8-151' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
-INFO: [Synth 8-6155] done synthesizing module 'ascii_rom' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ascii_rom' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_rom.v:2]
+INFO: [Synth 8-6157] synthesizing module 'ascii_rom_th' [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/new/ascii_rom_th.v:2]
+INFO: [Synth 8-6155] done synthesizing module 'ascii_rom_th' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/new/ascii_rom_th.v:2]
 INFO: [Synth 8-6155] done synthesizing module 'ascii_test' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:3]
-WARNING: [Synth 8-7071] port 'reset' of module 'ascii_test' is unconnected for instance 'at' [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/top.v:42]
-WARNING: [Synth 8-7023] instance 'at' of module 'ascii_test' has 8 connections declared, but only 7 given [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/top.v:42]
+WARNING: [Synth 8-7071] port 'reset' of module 'ascii_test' is unconnected for instance 'at' [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/top.v:44]
+WARNING: [Synth 8-7023] instance 'at' of module 'ascii_test' has 9 connections declared, but only 8 given [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/top.v:44]
 INFO: [Synth 8-6157] synthesizing module 'uart' [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/uart.v:22]
 INFO: [Synth 8-6157] synthesizing module 'baudrate_gen' [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/baudrate_gen.v:23]
 INFO: [Synth 8-6155] done synthesizing module 'baudrate_gen' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/baudrate_gen.v:23]
@@ -262,14 +264,110 @@ INFO: [Synth 8-155] case statement is not full and has no default [C:/Awork/y3s1
 INFO: [Synth 8-6155] done synthesizing module 'uart_tx' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/uart_tx.v:22]
 INFO: [Synth 8-6155] done synthesizing module 'uart' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/uart.v:22]
 INFO: [Synth 8-6155] done synthesizing module 'top' (0#1) [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/top.v:3]
-WARNING: [Synth 8-7137] Register mem_reg in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code 
-WARNING: [Synth 8-4767] Trying to implement RAM 'mem_reg' in registers. Block RAM or DRAM implementation is not possible; see log for reasons.
-Reason is one or more of the following :
-	1: RAM is sensitive to asynchronous reset signal. this RTL style is not supported. 
-RAM "mem_reg" dissolved into registers
-WARNING: [Synth 8-3848] Net seg in module/entity top does not have driver. [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/top.v:15]
-WARNING: [Synth 8-3848] Net dp in module/entity top does not have driver. [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/top.v:16]
-WARNING: [Synth 8-3848] Net an in module/entity top does not have driver. [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/top.v:17]
+WARNING: [Synth 8-7137] Register mem_reg[255] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[254] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[253] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[252] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[251] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[250] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[249] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[248] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[247] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[246] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[245] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[244] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[243] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[242] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[241] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[240] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[239] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[238] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[237] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[236] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[235] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[234] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[233] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[232] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[231] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[230] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[229] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[228] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[227] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[226] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[225] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[224] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[223] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[222] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[221] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[220] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[219] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[218] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[217] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[216] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[215] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[214] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[213] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[212] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[211] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[210] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[209] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[208] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[207] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[206] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[205] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[204] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[203] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[202] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[201] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[200] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[199] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[198] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[197] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[196] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[195] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[194] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[193] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[192] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[191] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[190] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[189] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[188] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[187] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[186] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[185] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[184] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[183] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[182] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[181] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[180] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[179] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[178] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[177] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[176] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[175] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[174] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[173] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[172] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[171] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[170] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[169] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[168] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[167] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[166] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[165] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[164] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[163] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[162] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[161] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[160] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[159] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[158] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[157] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+WARNING: [Synth 8-7137] Register mem_reg[156] in module ascii_test has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v:54]
+INFO: [Common 17-14] Message 'Synth 8-7137' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+WARNING: [Synth 8-3848] Net seg in module/entity top does not have driver. [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/top.v:16]
+WARNING: [Synth 8-3848] Net dp in module/entity top does not have driver. [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/top.v:17]
+WARNING: [Synth 8-3848] Net an in module/entity top does not have driver. [C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/top.v:18]
 WARNING: [Synth 8-7129] Port data[7] in module ascii_test is either unconnected or has no load
 WARNING: [Synth 8-7129] Port seg[6] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port seg[5] in module top is either unconnected or has no load
@@ -284,18 +382,18 @@ WARNING: [Synth 8-7129] Port an[2] in module top is either unconnected or has no
 WARNING: [Synth 8-7129] Port an[1] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port an[0] in module top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1477.980 ; gain = 584.742
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1838.121 ; gain = 945.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1477.980 ; gain = 584.742
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1838.121 ; gain = 945.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1477.980 ; gain = 584.742
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:13 . Memory (MB): peak = 1838.121 ; gain = 945.621
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 1477.980 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.095 . Memory (MB): peak = 1838.121 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -408,31 +506,31 @@ INFO: [Project 1-236] Implementation specific constraints were found while readi
 Resolution: To avoid this warning, move constraints listed in [.Xil/top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1580.141 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1900.262 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1580.141 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.019 . Memory (MB): peak = 1900.262 ; gain = 0.000
 INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1580.141 ; gain = 686.902
+Finished Constraint Validation : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a35tcpg236-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1580.141 ; gain = 686.902
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1580.141 ; gain = 686.902
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:21 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 1580.141 ; gain = 686.902
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -443,22 +541,23 @@ Detailed RTL Component Info :
 	   2 Input   10 Bit       Adders := 2     
 	   2 Input    8 Bit       Adders := 5     
 	   2 Input    6 Bit       Adders := 1     
-	   2 Input    4 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 1     
 	   2 Input    2 Bit       Adders := 1     
 +---Registers : 
 	               12 Bit    Registers := 1     
-	               11 Bit    Registers := 1     
+	               11 Bit    Registers := 2     
 	               10 Bit    Registers := 4     
 	                8 Bit    Registers := 8     
 	                7 Bit    Registers := 256   
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 22    
+	                1 Bit    Registers := 23    
 +---ROMs : 
-	                    ROMs := 1     
+	                    ROMs := 2     
 +---Muxes : 
 	   3 Input   12 Bit        Muxes := 1     
-	   2 Input    8 Bit        Muxes := 3     
-	   2 Input    1 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 4     
+	   2 Input    7 Bit        Muxes := 45    
+	   2 Input    1 Bit        Muxes := 770   
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -489,18 +588,19 @@ WARNING: [Synth 8-7129] Port an[2] in module top is either unconnected or has no
 WARNING: [Synth 8-7129] Port an[1] in module top is either unconnected or has no load
 WARNING: [Synth 8-7129] Port an[0] in module top is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 1580.141 ; gain = 686.902
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:35 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start ROM, RAM, DSP, Shift Register and Retiming Reporting
 ---------------------------------------------------------------------------------
 
 ROM: Preliminary Mapping Report
-+------------+------------------+---------------+----------------+
-|Module Name | RTL Object       | Depth x Width | Implemented As | 
-+------------+------------------+---------------+----------------+
-|ascii_test  | rom/addr_reg_reg | 2048x8        | Block RAM      | 
-+------------+------------------+---------------+----------------+
++------------+-------------------------+---------------+----------------+
+|Module Name | RTL Object              | Depth x Width | Implemented As | 
++------------+-------------------------+---------------+----------------+
+|ascii_test  | rom_en/addr_reg_reg_rep | 2048x8        | Block RAM      | 
+|ascii_test  | rom_en/addr_reg_reg     | 2048x8        | Block RAM      | 
++------------+-------------------------+---------------+----------------+
 
 ---------------------------------------------------------------------------------
 Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
@@ -509,20 +609,21 @@ Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1580.141 ; gain = 686.902
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:38 ; elapsed = 00:00:40 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1593.297 ; gain = 700.059
+Finished Timing Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:43 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7052] The timing for the instance at/rom/addr_reg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance at/rom_en/addr_reg_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance at/rom_en/addr_reg_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1593.297 ; gain = 700.059
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -540,37 +641,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1593.297 ; gain = 700.059
+Finished IO Insertion : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1593.297 ; gain = 700.059
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:48 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1593.297 ; gain = 700.059
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1593.297 ; gain = 700.059
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1593.297 ; gain = 700.059
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1593.297 ; gain = 700.059
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -589,43 +690,43 @@ Report Cell Usage:
 |1     |BUFG     |     4|
 |2     |CARRY4   |    32|
 |3     |LUT1     |    12|
-|4     |LUT2     |    26|
-|5     |LUT3     |    26|
-|6     |LUT4     |    18|
-|7     |LUT5     |   310|
-|8     |LUT6     |   543|
-|9     |MUXF7    |   240|
-|10    |MUXF8    |   119|
-|11    |RAMB18E1 |     1|
-|12    |FDCE     |    56|
-|13    |FDRE     |  1970|
-|14    |IBUF     |    13|
-|15    |OBUF     |    16|
-|16    |OBUFT    |    12|
+|4     |LUT2     |    35|
+|5     |LUT3     |    27|
+|6     |LUT4     |   290|
+|7     |LUT5     |    71|
+|8     |LUT6     |   803|
+|9     |MUXF7    |   242|
+|10    |MUXF8    |   120|
+|11    |RAMB18E1 |     2|
+|13    |FDCE     |    54|
+|14    |FDRE     |  1972|
+|15    |IBUF     |    14|
+|16    |OBUF     |    16|
+|17    |OBUFT    |    12|
 +------+---------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1593.297 ; gain = 700.059
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:47 ; elapsed = 00:00:48 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 14 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:34 . Memory (MB): peak = 1593.297 ; gain = 597.898
-Synthesis Optimization Complete : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1593.297 ; gain = 700.059
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:32 ; elapsed = 00:00:46 . Memory (MB): peak = 1900.262 ; gain = 945.621
+Synthesis Optimization Complete : Time (s): cpu = 00:00:47 ; elapsed = 00:00:49 . Memory (MB): peak = 1900.262 ; gain = 1007.762
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1593.297 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 392 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.029 . Memory (MB): peak = 1900.262 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 396 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1593.297 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1900.262 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete | Checksum: 46fc2306
+Synth Design complete | Checksum: ff7bad63
 INFO: [Common 17-83] Releasing license: Synthesis
-43 Infos, 268 Warnings, 34 Critical Warnings and 0 Errors encountered.
+47 Infos, 366 Warnings, 34 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 1593.297 ; gain = 1100.285
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:00:54 . Memory (MB): peak = 1900.262 ; gain = 1407.008
 INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
-Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1593.297 ; gain = 0.000
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1900.262 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.runs/synth_1/top.dcp' has been generated.
 INFO: [Vivado 12-24828] Executing command : report_utilization -file top_utilization_synth.rpt -pb top_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 03:11:34 2024...
+INFO: [Common 17-206] Exiting Vivado at Fri Dec  6 15:42:44 2024...

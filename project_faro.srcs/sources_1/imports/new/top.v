@@ -4,6 +4,7 @@ module top(
     input clk,          // 100MHz on Basys 3
     input reset,        // btnC on Basys 3
     input btnU,         // btnU on Basys 3 and send data from switch to another
+    input btnD,         // btnU on Basys 3 and send data from switch to another
     output wire RsTx,   // UART
     input wire RsRx,    // UART
     input [7:0] sw,     // switch
@@ -18,6 +19,7 @@ module top(
     );
     
     // signals
+    reg lang;                // Language state: 0 (English), 1 (Thai)
     wire [9:0] w_x, w_y;
     wire w_video_on, w_p_tick;
     wire sent1, sent2 ;
@@ -39,7 +41,7 @@ module top(
     // VGA Controller
     vga_controller vga(.clk_100MHz(clk), .reset(reset), .hsync(hsync), .vsync(vsync), .video_on(w_video_on), .p_tick(w_p_tick), .x(w_x), .y(w_y));
     // Text Generation Circuit
-    ascii_test at(.clk(clk), .video_on(w_video_on), .x(w_x), .y(w_y), .rgb(rgb_next), .data(data_in), .we(received1));
+    ascii_test at(.clk(clk), .video_on(w_video_on), .x(w_x), .y(w_y), .rgb(rgb_next), .data(data_in), .we(received1), .lang(lang));
     
     // UART1 Receive from another and transmit to monitor
     uart uart1(.tx(RsTx), .data_transmit(gnd_b),
@@ -51,6 +53,14 @@ module top(
                .tx(ja2), .data_received(gnd_b), .received(received2),
                .dte(btnU), .clk(clk));
    
+    // Language toggle on btnD press
+    always @(posedge clk or posedge reset) begin
+        if (reset)
+            lang = 1'b0; // Reset to English
+        else if (btnD)
+            lang = ~lang; // Toggle language state
+    end
+    
     // Reset
     always @(reset) begin
         idx = 0;

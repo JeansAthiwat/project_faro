@@ -137,6 +137,8 @@ set_property src_info {type:XDC file:1 line:140 export:INPUT save:INPUT read:REA
 set_property PACKAGE_PIN W4 [get_ports {an[3]}]
 set_property src_info {type:XDC file:1 line:147 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN T18 [get_ports btnU]
+set_property src_info {type:XDC file:1 line:153 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN U17 [get_ports btnD]
 set_property src_info {type:XDC file:1 line:160 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN J1 [get_ports ja1]
 set_property src_info {type:XDC file:1 line:163 export:INPUT save:INPUT read:READ} [current_design]
