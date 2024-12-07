@@ -31,12 +31,12 @@ module ascii_test(
     initial begin
         itr = 8'b00000000;
         for (i = 0; i < MEMSIZE; i = i + 1) begin
-            mem[i] = 7'h20;         // Initialize all memory locations to 7'h00
+            mem[i] = 7'h00;         // Initialize all memory locations to 7'h00
         end
     end
 
 
-//    // SCREEN UI PAINTER MODULE INSTANCE
+    // SCREEN UI PAINTER MODULE INSTANCE
 //    wire [11:0] painter_rgb; // Output RGB from screen_painter
 //    screen_painter ui_painter (
 //        .x(x),
@@ -59,19 +59,9 @@ module ascii_test(
     assign bit_addr = x[2:0];                   // Column number of ASCII character
 
     // Memory access: Adjusted for 32 columns per row
-    
-//    reg [6:0] ascii_char_reg; // Temporary register for ascii_char assignment
-//    always @(*) begin
-//        if ((x >= 192 && x < 448) && (y >= 176 && y < 304)) begin
-//            ascii_char_reg = mem[(x[7:3] + 8) & 5'b11111) + 32 * ((y[6:4] + 5) & 3'b111)]; // Access memory within range
-//        end else begin
-//            ascii_char_reg = 7'b0000000; // Default value if out of range
-//        end
-//    end
-//    assign ascii_char = ascii_char_reg; // Assign value to ascii_char
 
-    assign ascii_char = mem[(x[7:3]) + 32 * (y[6:4])]; // 32 columns, 8 rows (grid of 32x8)
-//    assign ascii_char = mem[((x[7:3] + 8) % 32) + (32 * ((y[6:4] + 5)%8))]; // 32 columns, 8 rows (grid of 32x8)
+//    assign ascii_char = mem[(x[7:3]) + 32 * (y[6:4])]; // 32 columns, 8 rows (grid of 32x8)
+    assign ascii_char = mem[((x[7:3] + 8) % 32) + (32 * ((y[6:4] + 5)%8))]; // 32 columns, 8 rows (grid of 32x8)
 //    assign ascii_char = mem[((x[7:3] + 8) % 32) + (32 * y[6:4])]; // 32 columns, 8 rows (grid of 32x8)
 
 //    assign ascii_char = mem[((x[7:3] + 8) & 5'b11111) + 32 * ((y[6:4] + 5) & 3'b111)];
@@ -89,7 +79,7 @@ always @(posedge we or posedge reset) begin
     if (reset) begin
         itr = 8'b00000000;
         for (i = 0; i < MEMSIZE; i = i + 1) begin
-            mem[i] <= 7'h20;         // Initialize all memory locations to 7'h00
+            mem[i] <= 7'h00;         // Initialize all memory locations to 7'h00
         end
     end else if (we) begin
         if (data[6:0] == 13) begin // Enter key

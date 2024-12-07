@@ -39,13 +39,16 @@ module top(
         .ascii(ps2_ascii)
     );
     
-    reg [7:0] ps2_ascii_reg;
-    always @(posedge ps2_flag) begin
-        ps2_ascii_reg = {1'b0, ps2_ascii};
-    end
+//    reg [7:0] ps2_ascii_reg;
+//    always @(*) begin
+//        ps2_ascii_reg = {1'b0, ps2_ascii};
+//    end
     
     wire [7:0] transmit_ascii_code;
-    assign transmit_ascii_code = (sw[8]) ? sw[7:0] : ps2_ascii_reg;
+    assign transmit_ascii_code = (sw[8]) ? sw[7:0] : {1'b0, ps2_ascii};
+    
+    wire duality_transmit_en;
+    assign duality_transmit_en = (btnU || ((ps2_ascii == 7'h00) ? 0 : 1));
     
     // signals
     reg lang;                // Language state: 0 (English), 1 (Thai)
@@ -72,26 +75,15 @@ module top(
     ascii_test at(.clk(clk), .video_on(w_video_on), .x(w_x), .y(w_y), .rgb(rgb_next), .data(data_in), .we(received1), .lang(lang), .reset(reset));
     
     // UART1 Receive from another and transmit to monitor
-//    uart uart1(.tx(RsTx), .data_transmit(gnd_b),
-//               .rx(ja1), .data_received(data_in), .received(received1),
-//               .dte(1'b0), .clk(clk));
-       uart uart1(.tx(RsTx), .data_transmit(gnd_b),
-   .rx(ja1), .data_received(data_in), .received(received1),
-   .dte(1'b0), .clk(clk));
+    uart uart1(  .tx(RsTx), .data_transmit(gnd_b),
+                .rx(ja1), .data_received(data_in), .received(received1),
+                .dte(1'b0), .clk(clk));
                 
-    // UART2 Receive from keyboard or switch and transmit to another
-//    uart uart2(.rx(RsRx), .data_transmit(sw[7:0]), 
-//               .tx(ja2), .data_received(gnd_b), .received(received2),
-//               .dte(btnU), .clk(clk));    
-// UART2 Receive from keyboard or switch and transmit to another
+// UART2 Receive from keyboard or ExtKB/sw and transmit to another
     uart uart2(.rx(RsRx), .data_transmit(transmit_ascii_code), 
                .tx(ja2), .data_received(gnd_b), .received(received2),
-               .dte(btnU), .clk(clk));
-    
-////     UART3 Receive from EXTERNAL keyboard and transmit to another
-//    uart uart3(.rx(RsRx), .data_transmit(ps2_ascii_reg), 
-//               .tx(ja2), .data_received(gnd_b), .received(received2),
-//               .dte(btnU), .clk(clk));
+               .dte(duality_transmit_en), .clk(clk));
+
     // Language toggle on btnD press
     always @(posedge clk or posedge reset) begin
         if (reset)

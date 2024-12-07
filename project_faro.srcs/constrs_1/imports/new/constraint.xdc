@@ -160,11 +160,11 @@ set_property PACKAGE_PIN U17 [get_ports btnD]
 set_property PACKAGE_PIN J1 [get_ports ja1]
 	set_property IOSTANDARD LVCMOS33 [get_ports ja1]
 #Sch name = JA2
-set_property PACKAGE_PIN L2 [get_ports ja2]
-	set_property IOSTANDARD LVCMOS33 [get_ports ja2]
+#set_property PACKAGE_PIN L2 [get_ports ja2]
+#	set_property IOSTANDARD LVCMOS33 [get_ports ja2]
 #Sch name = JA3
-set_property PACKAGE_PIN J2 [get_ports ja3]
-	set_property IOSTANDARD LVCMOS33 [get_ports ja3]
+set_property PACKAGE_PIN J2 [get_ports ja2]
+	set_property IOSTANDARD LVCMOS33 [get_ports ja2]
 ##Sch name = JA4
 #set_property PACKAGE_PIN G2 [get_ports {JA[3]}]
 #	set_property IOSTANDARD LVCMOS33 [get_ports {JA[3]}]
