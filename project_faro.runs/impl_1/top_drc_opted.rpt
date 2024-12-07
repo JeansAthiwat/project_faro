@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date         : Sat Dec  7 16:48:14 2024
+| Date         : Sat Dec  7 16:57:10 2024
 | Host         : Jeans running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 | Design       : top
@@ -67,102 +67,102 @@ Related violations: <none>
 
 REQP-1840#1 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[39][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[41][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#2 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[3][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[42][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#3 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[40][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[43][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#4 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[41][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[44][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#5 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[42][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[45][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#6 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[43][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[46][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#7 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[44][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[47][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#8 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[45][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[48][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#9 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[46][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[49][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#10 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[47][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[4][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#11 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[4][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[50][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#12 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[50][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[51][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#13 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (vga/h_count_reg_reg[3]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[52][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#14 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (vga/h_count_reg_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[53][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#15 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (vga/h_count_reg_reg[5]_rep) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[54][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#16 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (vga/h_count_reg_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[55][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#17 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (vga/h_count_reg_reg[7]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[56][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#18 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (vga/v_count_reg_reg[4]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[57][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#19 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (vga/v_count_reg_reg[5]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[60][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 REQP-1840#20 Warning
 RAMB18 async control check  
-The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (vga/v_count_reg_reg[6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[65][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 Related violations: <none>
 
 

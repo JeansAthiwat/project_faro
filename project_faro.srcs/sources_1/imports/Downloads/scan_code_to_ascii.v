@@ -49,6 +49,7 @@ module scan_code_to_ascii (
 
             // Spacebar
             8'h29: ascii = 7'h20; // Space
+            8'h5A: ascii = 7'h0d; // enter
 
             // Default case for unhandled scan codes
             default: ascii = 7'h00; // Null
