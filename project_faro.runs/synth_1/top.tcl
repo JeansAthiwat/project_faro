@@ -57,7 +57,12 @@ if {$::dispatch::connected} {
 
 OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param chipscope.maxJobs 3
+set_param checkpoint.writeSynthRtdsInDcp 1
+set_param synth.incrementalSynthesisCache C:/Users/Acer/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-18520-Jeans/incrSyn
 set_param xicom.use_bs_reader 1
+set_msg_config -id {Common 17-41} -limit 10000000
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a35tcpg236-1
 
@@ -80,7 +85,6 @@ read_verilog -library xil_defaultlib {
   C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/new/ascii_rom_th.v
   C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/ascii_test.v
   C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/baudrate_gen.v
-  C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/new/screen_painter.v
   C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/uart.v
   C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/uart_rx.v
   C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.srcs/sources_1/imports/new/uart_tx.v

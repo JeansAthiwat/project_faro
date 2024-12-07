@@ -36,14 +36,14 @@ module ascii_test(
     end
 
 
-    // SCREEN UI PAINTER MODULE INSTANCE
-    wire [11:0] painter_rgb; // Output RGB from screen_painter
-    screen_painter ui_painter (
-        .x(x),
-        .y(y),
-        .video_on(video_on),
-        .rgb(painter_rgb)
-    );
+//    // SCREEN UI PAINTER MODULE INSTANCE
+//    wire [11:0] painter_rgb; // Output RGB from screen_painter
+//    screen_painter ui_painter (
+//        .x(x),
+//        .y(y),
+//        .video_on(video_on),
+//        .rgb(painter_rgb)
+//    );
     
     // ASCII ROM instance
     ascii_rom_en rom_en(.clk(clk), .addr(rom_addr), .data(rom_data_en));
@@ -59,9 +59,20 @@ module ascii_test(
     assign bit_addr = x[2:0];                   // Column number of ASCII character
 
     // Memory access: Adjusted for 32 columns per row
+    
+    reg [6:0] ascii_char_reg; // Temporary register for ascii_char assignment
+    always @(*) begin
+        if ((x >= 192 && x < 448) && (y >= 176 && y < 304)) begin
+            ascii_char_reg = mem[((x[7:3] + 8) & 5'b11111) + 32 * ((y[6:4] + 5) & 3'b111)]; // Access memory within range
+        end else begin
+            ascii_char_reg = 7'b0000000; // Default value if out of range
+        end
+    end
+    assign ascii_char = ascii_char_reg; // Assign value to ascii_char
+
 //    assign ascii_char = mem[(x[7:3]) + 32 * (y[6:4])]; // 32 columns, 8 rows (grid of 32x8)
 //    assign ascii_char = mem[((x[7:3] + 8) % 32) + (32 * ((y[6:4] + 5)%8))]; // 32 columns, 8 rows (grid of 32x8)
-    assign ascii_char = mem[((x[7:3] + 8) % 32) + (32 * y[6:4])]; // 32 columns, 8 rows (grid of 32x8)
+//    assign ascii_char = mem[((x[7:3] + 8) % 32) + (32 * y[6:4])]; // 32 columns, 8 rows (grid of 32x8)
 
 //    assign ascii_char = mem[((x[7:3] + 8) & 5'b11111) + 32 * ((y[6:4] + 5) & 3'b111)];
     
@@ -108,8 +119,8 @@ end
             rgb = 12'h000; // Display blank screen
         else if (plot)
             rgb = 12'h000; // Blue letters
-        else if (painter_rgb != 12'h000)
-            rgb = painter_rgb; // Use UI painter's output for non-zero pixels
+//        else if (painter_rgb != 12'h000)
+//            rgb = painter_rgb; // Use UI painter's output for non-zero pixels
         else
             rgb = 12'hFFF; // White background
     end
