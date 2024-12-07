@@ -29,9 +29,9 @@ module ascii_test(
 
     // Initialize memory
     initial begin
-        itr = 8'b0;
+        itr = 8'b00000000;
         for (i = 0; i < MEMSIZE; i = i + 1) begin
-            mem[i] = 7'h00;         // Initialize all memory locations to 7'h00
+            mem[i] = 7'h20;         // Initialize all memory locations to 7'h00
         end
     end
 
@@ -46,7 +46,7 @@ module ascii_test(
     );
     
     // ASCII ROM instance
-    ascii_rom rom_en(.clk(clk), .addr(rom_addr), .data(rom_data_en));
+    ascii_rom_en rom_en(.clk(clk), .addr(rom_addr), .data(rom_data_en));
     
     // ASCII ROM TH instance
     ascii_rom_th rom_th(.clk(clk), .addr(rom_addr), .data(rom_data_th));
@@ -76,9 +76,9 @@ module ascii_test(
 // Memory write logic
 always @(posedge we or posedge reset) begin
     if (reset) begin
-        itr = 8'b0;
+        itr = 8'b00000000;
         for (i = 0; i < MEMSIZE; i = i + 1) begin
-            mem[i] = 7'h00;         // Initialize all memory locations to 7'h00
+            mem[i] <= 7'h20;         // Initialize all memory locations to 7'h00
         end
     end else if (we) begin
         if (data[6:0] == 13) begin // Enter key
