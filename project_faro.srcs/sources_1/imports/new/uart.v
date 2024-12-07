@@ -21,11 +21,11 @@
 
 module uart(
     input clk,
-    input rx,
+    input rx, // received port
     input [7:0] data_transmit,
 //    input sent,
     input dte, // data_transmit_enable
-    output tx,
+    output tx, // transmit port
     output [7:0] data_received,
     output received
     );

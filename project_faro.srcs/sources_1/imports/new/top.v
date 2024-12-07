@@ -7,8 +7,10 @@ module top(
     input btnD,         // btnU on Basys 3 and send data from switch to another
     output wire RsTx,   // UART
     input wire RsRx,    // UART
-    input [7:0] sw,     // switch
+    input [8:0] sw,     // switch
     input ja1,          // Receive from another board
+    input PS2Clk,             // PS/2 Clock
+    input PS2Data,            // PS/2 Data
     output ja2,         // Transmit to another board
     output hsync,       // to VGA connector
     output vsync,       // to VGA connector
@@ -17,6 +19,33 @@ module top(
     output dp,
     output [3:0] an     // 7-Segment an control
     );
+    
+    // PS/2 Keyboard Receiver
+    wire [15:0] ps2_keycode;
+    wire ps2_flag;
+    wire [6:0] ps2_ascii;
+
+    PS2Receiver ps2_receiver (
+        .clk(clk),
+        .kclk(PS2Clk),
+        .kdata(PS2Data),
+        .keycode(ps2_keycode),
+        .oflag(ps2_flag)
+    );
+
+    scan_code_to_ascii ps2_to_ascii (
+        .scan_code(ps2_keycode[7:0]),
+        .shift(1'b0), // Simplified, can add shift logic
+        .ascii(ps2_ascii)
+    );
+    
+    reg [7:0] ps2_ascii_reg;
+    always @(posedge ps2_flag) begin
+        ps2_ascii_reg = {1'b0, ps2_ascii};
+    end
+    
+    wire [7:0] transmit_ascii_code;
+    assign transmit_ascii_code = (sw[8]) ? sw[7:0] : ps2_ascii_reg;
     
     // signals
     reg lang;                // Language state: 0 (English), 1 (Thai)
@@ -33,7 +62,6 @@ module top(
     wire gnd; // Ground
     wire [7:0] gnd_b; // GROUND_BUS
     
-    
     // VGA ASSIGN VARIABLE
     assign char_row = w_y[3:0];// row number of ascii character rom
     assign bit_addr = w_x[2:0];// column number of ascii character rom
@@ -44,15 +72,26 @@ module top(
     ascii_test at(.clk(clk), .video_on(w_video_on), .x(w_x), .y(w_y), .rgb(rgb_next), .data(data_in), .we(received1), .lang(lang), .reset(reset));
     
     // UART1 Receive from another and transmit to monitor
-    uart uart1(.tx(RsTx), .data_transmit(gnd_b),
-               .rx(ja1), .data_received(data_in), .received(received1),
-               .dte(1'b0), .clk(clk));
+//    uart uart1(.tx(RsTx), .data_transmit(gnd_b),
+//               .rx(ja1), .data_received(data_in), .received(received1),
+//               .dte(1'b0), .clk(clk));
+       uart uart1(.tx(RsTx), .data_transmit(gnd_b),
+   .rx(ja1), .data_received(data_in), .received(received1),
+   .dte(1'b0), .clk(clk));
                 
     // UART2 Receive from keyboard or switch and transmit to another
-    uart uart2(.rx(RsRx), .data_transmit(sw[7:0]), 
+//    uart uart2(.rx(RsRx), .data_transmit(sw[7:0]), 
+//               .tx(ja2), .data_received(gnd_b), .received(received2),
+//               .dte(btnU), .clk(clk));    
+// UART2 Receive from keyboard or switch and transmit to another
+    uart uart2(.rx(RsRx), .data_transmit(transmit_ascii_code), 
                .tx(ja2), .data_received(gnd_b), .received(received2),
                .dte(btnU), .clk(clk));
-   
+    
+////     UART3 Receive from EXTERNAL keyboard and transmit to another
+//    uart uart3(.rx(RsRx), .data_transmit(ps2_ascii_reg), 
+//               .tx(ja2), .data_received(gnd_b), .received(received2),
+//               .dte(btnU), .clk(clk));
     // Language toggle on btnD press
     always @(posedge clk or posedge reset) begin
         if (reset)
