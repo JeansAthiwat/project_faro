@@ -36,14 +36,14 @@ module ascii_test(
     end
 
 
-//    // SCREEN UI PAINTER MODULE INSTANCE
-//    wire [11:0] painter_rgb; // Output RGB from screen_painter
-//    screen_painter ui_painter (
-//        .x(x),
-//        .y(y),
-//        .video_on(video_on),
-//        .rgb(painter_rgb)
-//    );
+    // SCREEN UI PAINTER MODULE INSTANCE
+    wire [11:0] painter_rgb; // Output RGB from screen_painter
+    screen_painter ui_painter (
+        .x(x),
+        .y(y),
+        .video_on(video_on),
+        .rgb(painter_rgb)
+    );
     
     // ASCII ROM instance
     ascii_rom_en rom_en(.clk(clk), .addr(rom_addr), .data(rom_data_en));
@@ -62,8 +62,8 @@ module ascii_test(
     
     reg [6:0] ascii_char_reg; // Temporary register for ascii_char assignment
     always @(*) begin
-        if ((x >= 192 && x < 448) && (y >= 176 && y < 304)) begin
-            ascii_char_reg = mem[((x[7:3] + 8) & 5'b11111) + 32 * ((y[6:4] + 5) & 3'b111)]; // Access memory within range
+        if ({y[6:4],x[7:3]} < MEMSIZE) begin
+            ascii_char_reg = mem[{y[6:4],x[7:3]}]; // Access memory within range
         end else begin
             ascii_char_reg = 7'b0000000; // Default value if out of range
         end
@@ -119,8 +119,8 @@ end
             rgb = 12'h000; // Display blank screen
         else if (plot)
             rgb = 12'h000; // Blue letters
-//        else if (painter_rgb != 12'h000)
-//            rgb = painter_rgb; // Use UI painter's output for non-zero pixels
+        else if (painter_rgb != 12'h000)
+            rgb = painter_rgb; // Use UI painter's output for non-zero          
         else
             rgb = 12'hFFF; // White background
     end

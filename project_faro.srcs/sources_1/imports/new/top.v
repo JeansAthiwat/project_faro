@@ -41,7 +41,7 @@ module top(
     // VGA Controller
     vga_controller vga(.clk_100MHz(clk), .reset(reset), .hsync(hsync), .vsync(vsync), .video_on(w_video_on), .p_tick(w_p_tick), .x(w_x), .y(w_y));
     // Text Generation Circuit
-    ascii_test at(.clk(clk), .video_on(w_video_on), .x(w_x), .y(w_y), .rgb(rgb_next), .data(data_in), .we(received1), .lang(lang));
+    ascii_test at(.clk(clk), .video_on(w_video_on), .x(w_x), .y(w_y), .rgb(rgb_next), .data(data_in), .we(received1), .lang(lang), .reset(reset));
     
     // UART1 Receive from another and transmit to monitor
     uart uart1(.tx(RsTx), .data_transmit(gnd_b),
