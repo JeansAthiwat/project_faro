@@ -1,7 +1,7 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
-| Date             : Sat Dec  7 16:57:38 2024
+| Date             : Sun Dec  8 17:33:05 2024
 | Host             : Jeans running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,7 +30,7 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 0.086        |
+| Total On-Chip Power (W)  | 0.087        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
 | Dynamic (W)              | 0.015        |
@@ -53,18 +53,18 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
-| Slice Logic    |     0.004 |     3502 |       --- |             --- |
-|   LUT as Logic |     0.004 |      845 |     20800 |            4.06 |
+| Slice Logic    |     0.005 |     3506 |       --- |             --- |
+|   LUT as Logic |     0.004 |      849 |     20800 |            4.08 |
 |   Register     |    <0.001 |     2068 |     41600 |            4.97 |
 |   CARRY4       |    <0.001 |       32 |      8150 |            0.39 |
-|   F7/F8 Muxes  |    <0.001 |      365 |     32600 |            1.12 |
+|   F7/F8 Muxes  |    <0.001 |      364 |     32600 |            1.12 |
 |   BUFG         |    <0.001 |        3 |        32 |            9.38 |
 |   Others       |     0.000 |       28 |       --- |             --- |
-| Signals        |     0.006 |     2735 |       --- |             --- |
+| Signals        |     0.006 |     2740 |       --- |             --- |
 | Block RAM      |     0.002 |        1 |        50 |            2.00 |
 | I/O            |    <0.001 |       45 |       106 |           42.45 |
 | Static Power   |     0.072 |          |           |                 |
-| Total          |     0.086 |          |           |                 |
+| Total          |     0.087 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 

@@ -48,7 +48,7 @@ module top(
     assign transmit_ascii_code = (sw[8]) ? sw[7:0] : {1'b0, ps2_ascii};
     
     wire duality_transmit_en;
-    assign duality_transmit_en = (btnU || (((sw[8]==0) && (ps2_ascii == 7'h00)) ? 0 : 1));
+    assign duality_transmit_en = ( ( ((sw[8]==1) && btnU) || ((sw[8]==0) && (~(ps2_ascii == 7'h00)) ) )? 1 : 0) ;
     
     // signals
     reg lang;                // Language state: 0 (English), 1 (Thai)
