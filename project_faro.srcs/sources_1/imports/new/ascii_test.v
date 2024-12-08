@@ -37,13 +37,13 @@ module ascii_test(
 
 
     // SCREEN UI PAINTER MODULE INSTANCE
-//    wire [11:0] painter_rgb; // Output RGB from screen_painter
-//    screen_painter ui_painter (
-//        .x(x),
-//        .y(y),
-//        .video_on(video_on),
-//        .rgb(painter_rgb)
-//    );
+    wire [11:0] painter_rgb; // Output RGB from screen_painter
+    screen_painter ui_painter (
+        .x(x),
+        .y(y),
+        .video_on(video_on),
+        .rgb(painter_rgb)
+    );
     
     // ASCII ROM instance
     ascii_rom_en rom_en(.clk(clk), .addr(rom_addr), .data(rom_data_en));
@@ -59,15 +59,10 @@ module ascii_test(
     assign bit_addr = x[2:0];                   // Column number of ASCII character
 
     // Memory access: Adjusted for 32 columns per row
-
 //    assign ascii_char = mem[(x[7:3]) + 32 * (y[6:4])]; // 32 columns, 8 rows (grid of 32x8)
     assign ascii_char = mem[((x[7:3] + 8) % 32) + (32 * ((y[6:4] + 5)%8))]; // 32 columns, 8 rows (grid of 32x8)
-//    assign ascii_char = mem[((x[7:3] + 8) % 32) + (32 * y[6:4])]; // 32 columns, 8 rows (grid of 32x8)
-
-//    assign ascii_char = mem[((x[7:3] + 8) & 5'b11111) + 32 * ((y[6:4] + 5) & 3'b111)];
     
     // Plot signal update for larger display area
-    
     // (assign plot if char bit is not 0)
     assign plot = ((x >= 192 && x < 448) && (y >= 176 && y < 304)) 
                   ? (lang == 1'b0 ? ascii_bit_en : ascii_bit_th) 
@@ -109,8 +104,8 @@ end
             rgb = 12'h000; // Display blank screen
         else if (plot)
             rgb = 12'h000; // Blue letters
-//        else if (painter_rgb != 12'h000)
-//            rgb = painter_rgb; // Use UI painter's output for non-zero          
+        else if (painter_rgb != 12'h000)
+            rgb = painter_rgb; // Use UI painter's output for non-zero          
         else
             rgb = 12'hFFF; // White background
     end

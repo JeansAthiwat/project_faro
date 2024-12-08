@@ -3,13 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-<<<<<<< Updated upstream
-# Start of session at: Sun Dec  8 17:32:07 2024
-# Process ID: 9000
-=======
-# Start of session at: Sun Dec  8 17:58:37 2024
-# Process ID: 11628
->>>>>>> Stashed changes
+# Start of session at: Sun Dec  8 17:47:55 2024
+# Process ID: 15012
 # Current directory: C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.runs/impl_1/top.vdi
@@ -24,10 +19,6 @@
 # Host memory       :16487 MB
 # Swap memory       :1677 MB
 # Total Virtual     :18165 MB
-<<<<<<< Updated upstream
-# Available Virtual :6232 MB
-=======
-# Available Virtual :4992 MB
->>>>>>> Stashed changes
+# Available Virtual :6110 MB
 #-----------------------------------------------------------
 source top.tcl -notrace

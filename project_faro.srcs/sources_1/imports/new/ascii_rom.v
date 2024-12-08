@@ -1,8 +1,4 @@
 `timescale 1ns / 1ps
-    // *************************************************************
-    // ASCII/Unicode Character ROM
-    // *************************************************************
-
     module ascii_rom_en(
         input clk,
         input wire [10:0] addr,

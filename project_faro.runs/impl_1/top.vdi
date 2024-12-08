@@ -3,8 +3,13 @@
 # SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+<<<<<<< Updated upstream
 # Start of session at: Sun Dec  8 17:32:07 2024
 # Process ID: 9000
+=======
+# Start of session at: Sun Dec  8 17:58:37 2024
+# Process ID: 11628
+>>>>>>> Stashed changes
 # Current directory: C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.runs/impl_1
 # Command line: vivado.exe -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.runs/impl_1/top.vdi
@@ -19,6 +24,7 @@
 # Host memory       :16487 MB
 # Swap memory       :1677 MB
 # Total Virtual     :18165 MB
+<<<<<<< Updated upstream
 # Available Virtual :6232 MB
 #-----------------------------------------------------------
 source top.tcl -notrace
@@ -834,6 +840,47 @@ Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory 
 Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 2172.977 ; gain = 0.000
 Write Physdb Complete: Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.314 . Memory (MB): peak = 2172.977 ; gain = 0.000
 INFO: [Common 17-1381] The checkpoint 'C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.runs/impl_1/top_routed.dcp' has been generated.
+=======
+# Available Virtual :4992 MB
+#-----------------------------------------------------------
+source top.tcl -notrace
+Command: open_checkpoint top_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.047 . Memory (MB): peak = 302.406 ; gain = 6.160
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 893.512 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 508 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 986.848 ; gain = 0.766
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1540.367 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1540.367 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.168 . Memory (MB): peak = 1540.367 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1540.367 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.059 . Memory (MB): peak = 1540.367 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.251 . Memory (MB): peak = 1540.367 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.299 . Memory (MB): peak = 1540.367 ; gain = 8.270
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1540.367 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.1 (64-bit) build 5076996
+WARNING: [Vivado 12-23575] Critical violations of the methodology design rules detected. Critical violations may contribute to timing failures or cause functional issues in hardware. Run report_methodology for more information.
+open_checkpoint: Time (s): cpu = 00:00:15 ; elapsed = 00:00:17 . Memory (MB): peak = 1540.367 ; gain = 1252.508
+>>>>>>> Stashed changes
 Command: write_bitstream -force top.bit
 Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
 INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
@@ -850,9 +897,14 @@ WARNING: [DRC CFGBVS-1] Missing CFGBVS and CONFIG_VOLTAGE Design Properties: Nei
 
 Refer to the device configuration user guide for more information.
 WARNING: [DRC CHECK-3] Report rule limit reached: REQP-1840 rule limit reached: 20 violations have been found.
-WARNING: [DRC PDRC-153] Gated clock check: Net vga/CLK is a gated clock net sourced by a combinational pin vga/h_count_next[9]_i_2/O, cell vga/h_count_next[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+WARNING: [DRC DPIP-1] Input pipelining: DSP at/ui_painter/index input at/ui_painter/index/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPIP-1] Input pipelining: DSP at/ui_painter/index input at/ui_painter/index/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+WARNING: [DRC DPOP-1] PREG Output pipelining: DSP at/ui_painter/index output at/ui_painter/index/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+WARNING: [DRC DPOP-2] MREG Output pipelining: DSP at/ui_painter/index multiplier stage at/ui_painter/index/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+WARNING: [DRC PDRC-153] Gated clock check: Net vga/w_p_tick is a gated clock net sourced by a combinational pin vga/h_count_next[9]_i_2/O, cell vga/h_count_next[9]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 WARNING: [DRC PLHOLDVIO-2] Non-Optimal connections which could lead to hold violations: A LUT vga/h_count_next[9]_i_2 is driving clock pin of 20 cells. This could lead to large hold time violations. Involved cells are:
 vga/h_count_next_reg[0], vga/h_count_next_reg[1], vga/h_count_next_reg[2], vga/h_count_next_reg[3], vga/h_count_next_reg[4], vga/h_count_next_reg[5], vga/h_count_next_reg[6], vga/h_count_next_reg[7], vga/h_count_next_reg[8], vga/h_count_next_reg[9], vga/v_count_next_reg[0], vga/v_count_next_reg[1], vga/v_count_next_reg[2], vga/v_count_next_reg[3], vga/v_count_next_reg[4]... and (the first 15 of 20 listed)
+<<<<<<< Updated upstream
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[45][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[46][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[47][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
@@ -874,6 +926,29 @@ WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[63][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[64][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
 INFO: [Vivado 12-3199] DRC finished with 0 Errors, 24 Warnings
+=======
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[74][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[75][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[76][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[77][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[78][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[79][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[7][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[80][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[81][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[82][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[83][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[84][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[85][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[86][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[87][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[88][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[89][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[8][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[94][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+WARNING: [DRC REQP-1840] RAMB18 async control check: The RAMB18E1 at/rom_en/addr_reg_reg has an input control pin at/rom_en/addr_reg_reg/ADDRARDADDR[13] (net: at/rom_en/sel[10]) which is driven by a register (at/mem_reg[97][6]) that has an active asychronous set or reset. This may cause corruption of the memory contents and/or read values when the set/reset is asserted and is not analyzed by the default static timing analysis. It is suggested to eliminate the use of a set/reset to registers driving this RAMB pin or else use a synchronous reset in which the assertion of the reset is timed by default.
+INFO: [Vivado 12-3199] DRC finished with 0 Errors, 28 Warnings
+>>>>>>> Stashed changes
 INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
 INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
 Loading data files...
@@ -886,7 +961,14 @@ Writing bitstream ./top.bit...
 INFO: [Vivado 12-1842] Bitgen Completed Successfully.
 INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
 INFO: [Common 17-83] Releasing license: Implementation
+<<<<<<< Updated upstream
 126 Infos, 59 Warnings, 32 Critical Warnings and 0 Errors encountered.
 write_bitstream completed successfully
 write_bitstream: Time (s): cpu = 00:00:11 ; elapsed = 00:00:10 . Memory (MB): peak = 2605.910 ; gain = 432.934
 INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 17:33:15 2024...
+=======
+24 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:12 ; elapsed = 00:00:10 . Memory (MB): peak = 2049.727 ; gain = 509.359
+INFO: [Common 17-206] Exiting Vivado at Sun Dec  8 17:59:06 2024...
+>>>>>>> Stashed changes

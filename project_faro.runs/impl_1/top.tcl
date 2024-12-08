@@ -286,6 +286,17 @@ start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
+<<<<<<< Updated upstream
+=======
+  set_param chipscope.maxJobs 3
+  set_param checkpoint.writeSynthRtdsInDcp 1
+  set_param synth.incrementalSynthesisCache C:/Users/Acer/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-4804-Jeans/incrSyn
+  set_param xicom.use_bs_reader 1
+  set_param runs.launchOptions { -jobs 12  }
+  open_checkpoint top_routed.dcp
+  set_property webtalk.parent_dir C:/Awork/y3s1/HWSynLab/project/project_faro/project_faro.cache/wt [current_project]
+set_property TOP top [current_fileset]
+>>>>>>> Stashed changes
 OPTRACE "read constraints: write_bitstream" START { }
 OPTRACE "read constraints: write_bitstream" END { }
   catch { write_mem_info -force -no_partial_mmi top.mmi }

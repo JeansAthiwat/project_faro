@@ -38,3 +38,13 @@
     <Process Command="vivado.bat" Owner="Acer" Host="JEANS" Pid="15852" HostCore="12" HostMemory="016487870464">
     </Process>
 </ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Acer" Host="JEANS" Pid="16232" HostCore="12" HostMemory="016487870464">
+    </Process>
+</ProcessHandle>
+<?xml version="1.0"?>
+<ProcessHandle Version="1" Minor="0">
+    <Process Command="vivado.bat" Owner="Acer" Host="JEANS" Pid="5452" HostCore="12" HostMemory="016487870464">
+    </Process>
+</ProcessHandle>

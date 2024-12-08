@@ -1,7 +1,11 @@
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+<<<<<<< Updated upstream
 | Date             : Sun Dec  8 17:33:05 2024
+=======
+| Date             : Sun Dec  8 17:49:45 2024
+>>>>>>> Stashed changes
 | Host             : Jeans running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +34,18 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
+<<<<<<< Updated upstream
 | Total On-Chip Power (W)  | 0.087        |
+=======
+| Total On-Chip Power (W)  | 0.130        |
+>>>>>>> Stashed changes
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 0.015        |
+| Dynamic (W)              | 0.058        |
 | Device Static (W)        | 0.072        |
 | Effective TJA (C/W)      | 5.0          |
-| Max Ambient (C)          | 84.6         |
-| Junction Temperature (C) | 25.4         |
+| Max Ambient (C)          | 84.3         |
+| Junction Temperature (C) | 25.7         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -53,6 +61,7 @@ Table of Contents
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
 | Clocks         |     0.002 |        3 |       --- |             --- |
+<<<<<<< Updated upstream
 | Slice Logic    |     0.005 |     3506 |       --- |             --- |
 |   LUT as Logic |     0.004 |      849 |     20800 |            4.08 |
 |   Register     |    <0.001 |     2068 |     41600 |            4.97 |
@@ -61,10 +70,25 @@ Table of Contents
 |   BUFG         |    <0.001 |        3 |        32 |            9.38 |
 |   Others       |     0.000 |       28 |       --- |             --- |
 | Signals        |     0.006 |     2740 |       --- |             --- |
+=======
+| Slice Logic    |     0.010 |     5163 |       --- |             --- |
+|   LUT as Logic |     0.010 |     2373 |     20800 |           11.41 |
+|   Register     |    <0.001 |     2086 |     41600 |            5.01 |
+|   CARRY4       |    <0.001 |       32 |      8150 |            0.39 |
+|   F7/F8 Muxes  |    <0.001 |      473 |     32600 |            1.45 |
+|   BUFG         |    <0.001 |        3 |        32 |            9.38 |
+|   Others       |     0.000 |       31 |       --- |             --- |
+| Signals        |     0.011 |     4190 |       --- |             --- |
+>>>>>>> Stashed changes
 | Block RAM      |     0.002 |        1 |        50 |            2.00 |
-| I/O            |    <0.001 |       45 |       106 |           42.45 |
+| DSPs           |    <0.001 |        1 |        90 |            1.11 |
+| I/O            |     0.033 |       45 |       106 |           42.45 |
 | Static Power   |     0.072 |          |           |                 |
+<<<<<<< Updated upstream
 | Total          |     0.087 |          |           |                 |
+=======
+| Total          |     0.130 |          |           |                 |
+>>>>>>> Stashed changes
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -74,9 +98,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) | Powerup (A) | Budget (A)  | Margin (A) |
 +-----------+-------------+-----------+-------------+------------+-------------+-------------+------------+
-| Vccint    |       1.000 |     0.023 |       0.014 |      0.010 |       NA    | Unspecified | NA         |
-| Vccaux    |       1.800 |     0.013 |       0.000 |      0.013 |       NA    | Unspecified | NA         |
-| Vcco33    |       3.300 |     0.001 |       0.000 |      0.001 |       NA    | Unspecified | NA         |
+| Vccint    |       1.000 |     0.035 |       0.025 |      0.010 |       NA    | Unspecified | NA         |
+| Vccaux    |       1.800 |     0.014 |       0.001 |      0.013 |       NA    | Unspecified | NA         |
+| Vcco33    |       3.300 |     0.010 |       0.009 |      0.001 |       NA    | Unspecified | NA         |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |       NA    | Unspecified | NA         |
@@ -140,13 +164,14 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+------------+-----------+
-| Name       | Power (W) |
-+------------+-----------+
-| top        |     0.015 |
-|   at       |     0.007 |
-|     rom_en |     0.003 |
-|   vga      |     0.004 |
-+------------+-----------+
++----------------+-----------+
+| Name           | Power (W) |
++----------------+-----------+
+| top            |     0.058 |
+|   at           |     0.019 |
+|     rom_en     |     0.003 |
+|     ui_painter |     0.011 |
+|   vga          |     0.003 |
++----------------+-----------+
 
 
